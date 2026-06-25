@@ -38,27 +38,22 @@ npm or yarn
 2. Frontend Setup
 From the project root, install the dependencies:
 bash
-
 npm install
 Start the local development server:
 bash
-
 npm run dev
 Open http://localhost:5173 in your browser.
 3. Backend Setup
-Navigate to the backend folder:
+1. Navigate to the backend folder:
 bash
-
 cd backend
-Install the backend dependencies:
+2. Install the backend dependencies:
 bash
-
 npm install
-Copy the .env.example file to .env and fill in your Gemini API key:
+3. Copy the .env.example file to .env and fill in your Gemini API key:
 bash
-
 cp .env.example .env
-Start the backend server:
+4. Start the backend server:
 bash
 
 npm run dev

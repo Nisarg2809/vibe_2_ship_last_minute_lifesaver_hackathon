@@ -33,36 +33,48 @@ FocusAI is structured as a client-side progressive web application with a Node.j
 
 ⚡ Getting Started (Local Development)
 1. Prerequisites
-Node.js (v18 or higher)
-npm or yarn
-2. Frontend Setup
-From the project root, install the dependencies:
-bash
-npm install
-Start the local development server:
-bash
-npm run dev
-Open http://localhost:5173 in your browser.
-3. Backend Setup
-1. Navigate to the backend folder:
-bash
-cd backend
-2. Install the backend dependencies:
-bash
-npm install
-3. Copy the .env.example file to .env and fill in your Gemini API key:
-bash
-cp .env.example .env
-4. Start the backend server:
-bash
+> Node.js (v18 or higher)
+> npm or yarn
 
-npm run dev
+2. Frontend Setup
+  1. From the project root, install the dependencies:
+     bash
+     npm install
+  2. Start the local development server:
+     bash
+     npm run dev
+  3. Open http://localhost:5173 in your browser.
+    
+3. Backend Setup
+  1. Navigate to the backend folder:
+     bash
+     cd backend
+  2. Install the backend dependencies:
+     bash
+     npm install
+  3. Copy the .env.example file to .env and fill in your Gemini API key:
+     bash
+     cp .env.example .env
+  4. Start the backend server:
+     bash
+     npm run dev
 
 📊 Client-Side Database Schema
-Table Name	Key Attributes	Description / Purpose
-UserAccount	id, name, email, passwordHash, persona	Stores registered users and chosen workspace personas.
-Task	id, title, description, deadline, priority, estimatedHours, completed, progress, category, timeSpentMinutes, subtasks	Stores tasks, subtasks, priorities, and completion state.
-ScheduleSlot	id, taskId, subtaskId, startTime, endTime, status, actualDurationMinutes	Stores daily schedule slots and completion statuses.
-Reminder	id, taskId, subtaskId, triggerTime, type, message, status	Stores alert notifications.
-Habit	id, title, category, frequency, streakCount, lastCompletedDate, history	Logs habits streaks and daily/weekly completion status.
-ChatMessage	id, sender, text, timestamp	Stores coach conversation history.
+Table Name	                  Key Attributes	                                           Description / Purpose
+
+UserAccount	                  id, name, email, passwordHash, persona	                   Stores registered users and chosen workspace personas.
+
+Task	                        id, title, description, deadline, priority,                Stores tasks, subtasks, priorities, and completion state.
+                              estimatedHours, completed, progress, category, 
+                              timeSpentMinutes, subtasks
+                              
+ScheduleSlot	                id, taskId, subtaskId, startTime, endTime,                 Stores daily schedule slots and completion statuses.
+                              status, actualDurationMinutes	
+
+Reminder	                    id, taskId, subtaskId, triggerTime, type,                  Stores alert notifications.
+                              message, status	
+
+Habit	                        id, title, category, frequency, streakCount,              Logs habits streaks and daily/weekly completion status.
+                              lastCompletedDate, history	
+
+ChatMessage	                  id, sender, text, timestamp	                              Stores coach conversation history.

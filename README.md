@@ -11,7 +11,7 @@ FocusAI was designed, built, and optimized using a specialized suite of generati
 > Antigravity: The primary AI agent and coding assistant driving codebase creation, TypeScript refactoring, CSS styling, and build verification.
 > ChatGPT: Used for generating helper scripts, outlining initial specs, and drafting documentation.
 > Gemini 3.1 Pro: Utilized for complex reasoning tasks, strategic planning analysis, and deep-context multi-agent simulation prompts.
-> Gemini Flash 3.5: Integrated as the live, high-speed model powering the runtime features (Autopilot schedule compilation, task decomposition, and responsive coach chat).
+> Gemini 3.5 Flash: Integrated as the live, high-speed model powering the runtime features (Autopilot schedule compilation, task decomposition, and responsive coach chat).
 
 🛠️ Technology Stack & Architecture
 FocusAI is structured as a client-side progressive web application with a Node.js/Express companion backend for authentication and mock service integration.
